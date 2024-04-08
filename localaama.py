@@ -6,7 +6,6 @@ from langchain_community.llms import ollama
 import streamlit as st
 import os
 from dotenv import load_dotenv
-
 load_dotenv()
 
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
@@ -24,14 +23,18 @@ prompt = ChatPromptTemplate.from_messages(
 
 ## streamlit framework
 
-st.title("Langchain Demo With OPENAI API")
+st.title("Langchain Demo With Llama2 API")
 input_text = st.text_input("Search the topic u want")
 
 # ollama Llama2 LLM
 
-llm = ollama(model="llama2")
+from langchain_community.llms import Ollama
+
+llm = Ollama(model="llama2")
+
 output_parser = StrOutputParser()
 chain = prompt|llm|output_parser
 
 if input_text:
     st.write(chain.invoke({'question':input_text}))
+
