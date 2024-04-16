@@ -16,7 +16,7 @@ os.environ["LANGCHAIN_TRACKING_V2"] = "true" # for langchain tracking
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY") 
 
 ## Prompt Template
-
+ 
 prompt = ChatPromptTemplate.from_messages(
     [
         ("system", "you are a helpful assistant. Please response to the user queries"),
