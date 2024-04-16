@@ -3,10 +3,6 @@ from langchain_core.prompts import ChatPromptTemplate
 
 from langchain_core.output_parsers import StrOutputParser
 
-"""
-In essence, parsing acts as a bridge between the LLM's internal representation and the human-readable world.
- It takes the raw output and transforms it into something easily interpreted and used by other components in the Langchain application.
-"""
 
 from langchain_community.llms import ollama
 
