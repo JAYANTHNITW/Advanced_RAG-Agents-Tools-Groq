@@ -23,7 +23,7 @@
 * **Recursion** is a concept where a function or process calls itself within its own definition. 
 *  If the text after splitting with delimiters(**order**: Newline characters (\n), Paragraph breaks (\n\n), white space, and so on ) is still larger than the specified chunk_size, the function recursively calls itself on each resulting segment. This process continues until all segments are either smaller than or equal to the chunk_size.
 # RAG Pipeline:
-![Alt text](rag\RagPipeline.png)
+![Alt text](rag/RagPipeline.png)
 ### Step 1: Load the Source Data
 1. **Data ingestion:** We import data from different ways like from pdfs,text files, Excel files, Readme file, directories and web. I used the following classes from langchain in this project: ```PyPDFLoader```, ```WebBaseLoader```, ```TextLoader```.
 2. **Transform:** The document will be divided into chunks of specified length using ```RecursiveCharacterTextSplitter```
