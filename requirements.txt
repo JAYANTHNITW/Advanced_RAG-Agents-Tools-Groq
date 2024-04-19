@@ -8,3 +8,8 @@ uvicorn
 langchain_core
 langchain_community
 sse_starlette
+bs4
+pypdf
+chromadb
+faiss-cpu
+lancedb
