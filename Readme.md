@@ -25,7 +25,7 @@
 ***
 
 # RAG Pipeline:
-![Alt text](rag\RagPipeline.png)
+![Alt text](rag/RagPipeline.png)
 ### Step 1: Load the Source Data
 1. **Data ingestion:** We import data from different ways like from pdfs,text files, Excel files, Readme file, directories and web. I used the following classes from langchain in this project: ```PyPDFLoader```, ```WebBaseLoader```, ```TextLoader```.
 2. **Transform:** The document will be divided into chunks of specified length using ```RecursiveCharacterTextSplitter```
