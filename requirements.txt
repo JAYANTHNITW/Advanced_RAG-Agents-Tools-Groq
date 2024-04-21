@@ -13,3 +13,6 @@ pypdf
 chromadb
 faiss-cpu
 lancedb
+arxiv
+wikipedia
+langchainhub

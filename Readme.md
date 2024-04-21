@@ -83,6 +83,11 @@ The pipeline consists of the following stages:
 - **Improved Relevance:** The retrieval process helps ensure that the LLM focuses on documents that are semantically relevant to the user's query, leading to more accurate and pertinent responses.
 
 This advanced RAG pipeline offers a powerful way to leverage the capabilities of LLMs by providing them with additional context through retrieved documents. This can significantly improve the quality and relevance of the generated responses in various conversational AI applications.
+***
+# Multiple Data Sources With Langchain
+![Alt text](agents/Flow%20Chart%20To%20fetch%20data%20from%20multiple%20sources.png)
+1. **Tools:** Tools in langchain help us to fetch data from different sources like wikipedia, google scholar, arxiv, pdfs and so on.
+2. **Agents:** The core idea of agents is to use a language model to choose a sequence of actions to take. In chains, a sequence of actions is hardcoded (in code). In agents, a language model is used as a reasoning engine to determine which actions to take and in which order.
 
 
 
