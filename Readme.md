@@ -90,4 +90,11 @@ This advanced RAG pipeline offers a powerful way to leverage the capabilities of
 2. **Agents:** The core idea of agents is to use a language model to choose a sequence of actions to take. In chains, a sequence of actions is hardcoded (in code). In agents, a language model is used as a reasoning engine to determine which actions to take and in which order.
 
 
+# Chatbot with Llama 3
+* created a bot using rag where we an ask the llm to give the information with context present in the integrated website or pdf using document similarity search.
 
+### Project 1:
+* Used Gamma 7B model using Groq and applied rag on ```WebBaseLoader()```
+
+### Project 2:
+* Used Llama 3 model using Groq and applied rag on documents using ```PyPDFDirectoryLoader()```
